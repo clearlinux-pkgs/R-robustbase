@@ -1,19 +1,13 @@
 # This file contains recursive sources that require this package
-R-DendSer
 R-ICS
-R-ICSNP
 R-VIM
-R-caret
-R-clue
 R-compositions
 R-cvTools
 R-ddalpha
-R-dendextend
+R-fAssets
 R-fpc
 R-mvoutlier
 R-pcaPP
-R-phylogram
-R-recipes
 R-robCompositions
+R-robust
 R-rrcov
-R-seriation

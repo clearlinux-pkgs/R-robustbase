@@ -1,6 +1,7 @@
-0.93.2
+0.93.3
 R-DEoptimR
-R-sfsmisc
-R-matrixStats
-R-xtable
 R-GGally
+R-labeling
+R-matrixStats
+R-sfsmisc
+R-xtable
