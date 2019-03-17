@@ -3,5 +3,6 @@ R-DEoptimR
 R-GGally
 R-labeling
 R-matrixStats
+R-reshape2
 R-sfsmisc
 R-xtable
