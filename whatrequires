@@ -1,9 +1,11 @@
 # This file contains recursive sources that require this package
+R-DendSer
 R-ICS
 R-VIM
 R-compositions
 R-cvTools
 R-ddalpha
+R-dendextend
 R-distrEx
 R-fAssets
 R-fpc

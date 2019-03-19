@@ -4,19 +4,43 @@
 #
 Name     : R-robustbase
 Version  : 0.93.3
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/robustbase_0.93-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robustbase_0.93-3.tar.gz
 Summary  : Basic Robust Statistics
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
 Requires: R-robustbase-lib = %{version}-%{release}
+Requires: R-RColorBrewer
+Requires: R-Rcpp
+Requires: R-gtable
+Requires: R-lazyeval
+Requires: R-munsell
+Requires: R-pillar
+Requires: R-pkgconfig
+Requires: R-plyr
+Requires: R-reshape
+Requires: R-scales
+Requires: R-stringi
+Requires: R-tibble
 BuildRequires : R-DEoptimR
 BuildRequires : R-GGally
+BuildRequires : R-RColorBrewer
+BuildRequires : R-Rcpp
+BuildRequires : R-gtable
 BuildRequires : R-labeling
+BuildRequires : R-lazyeval
 BuildRequires : R-matrixStats
+BuildRequires : R-munsell
+BuildRequires : R-pillar
+BuildRequires : R-pkgconfig
+BuildRequires : R-plyr
+BuildRequires : R-reshape
 BuildRequires : R-reshape2
+BuildRequires : R-scales
 BuildRequires : R-sfsmisc
+BuildRequires : R-stringi
+BuildRequires : R-tibble
 BuildRequires : R-xtable
 BuildRequires : buildreq-R
 
@@ -42,10 +66,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552866501
+export SOURCE_DATE_EPOCH=1552959077
 
 %install
-export SOURCE_DATE_EPOCH=1552866501
+export SOURCE_DATE_EPOCH=1552959077
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
