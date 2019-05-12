@@ -1,8 +1,9 @@
-0.93.4
+0.93.5
 R-DEoptimR
 R-GGally
 R-RColorBrewer
 R-Rcpp
+R-ggplot2
 R-gtable
 R-labeling
 R-lazyeval
