@@ -4,7 +4,7 @@
 #
 Name     : R-robustbase
 Version  : 0.93.5
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/robustbase_0.93-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robustbase_0.93-5.tar.gz
 Summary  : Basic Robust Statistics
@@ -13,14 +13,10 @@ License  : GPL-2.0 GPL-2.0+
 Requires: R-robustbase-lib = %{version}-%{release}
 Requires: R-DEoptimR
 Requires: R-GGally
-Requires: R-matrixStats
-Requires: R-reshape
 Requires: R-sfsmisc
 Requires: R-xtable
 BuildRequires : R-DEoptimR
 BuildRequires : R-GGally
-BuildRequires : R-matrixStats
-BuildRequires : R-reshape
 BuildRequires : R-sfsmisc
 BuildRequires : R-xtable
 BuildRequires : buildreq-R
@@ -47,10 +43,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563570737
+export SOURCE_DATE_EPOCH=1568759181
 
 %install
-export SOURCE_DATE_EPOCH=1563570737
+export SOURCE_DATE_EPOCH=1568759181
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
