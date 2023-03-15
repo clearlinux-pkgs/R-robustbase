@@ -4,7 +4,7 @@
 #
 Name     : R-robustbase
 Version  : 0.95.0
-Release  : 60
+Release  : 61
 URL      : https://cran.r-project.org/src/contrib/robustbase_0.95-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robustbase_0.95-0.tar.gz
 Summary  : Basic Robust Statistics
