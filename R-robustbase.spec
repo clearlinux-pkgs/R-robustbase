@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-robustbase
-Version  : 0.95.1
-Release  : 63
-URL      : https://cran.r-project.org/src/contrib/robustbase_0.95-1.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/robustbase_0.95-1.tar.gz
+Version  : 0.99.0
+Release  : 64
+URL      : https://cran.r-project.org/src/contrib/robustbase_0.99-0.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/robustbase_0.99-0.tar.gz
 Summary  : Basic Robust Statistics
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
@@ -49,16 +49,19 @@ license components for the R-robustbase package.
 
 %prep
 %setup -q -n robustbase
+pushd ..
+cp -a robustbase buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680189488
+export SOURCE_DATE_EPOCH=1686931401
 
 %install
-export SOURCE_DATE_EPOCH=1680189488
+export SOURCE_DATE_EPOCH=1686931401
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-robustbase
 cp %{_builddir}/robustbase/inst/Copyrights %{buildroot}/usr/share/package-licenses/R-robustbase/a3b9c9fccbc9ea2dae228a0a603b79330dad23ec || :
@@ -98,6 +101,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc . || :
 
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
